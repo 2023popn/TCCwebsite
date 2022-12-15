@@ -1,0 +1,71 @@
+@font-face{
+    font-family: fatcow;
+    src: url(FatCow.otf);
+}
+
+body,html{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+section{
+    background-color: bisque;
+}
+
+.primary-frames{
+    background-color: rgb(201, 185, 5);
+}
+
+#welcome-frame{
+    background-color: #888;
+    height: 100vh;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+#welcome-frame a{
+    font-family: fatcow;
+    font-size: 100px;
+}
+
+#first-time-frame{
+    background-color: rebeccapurple;
+    height: 95vh;
+    width: 100%;
+    position: sticky;
+    top: 5%;
+}
+
+#upcoming-events-frame{
+    background-color: hotpink;
+    height: 90vh;
+    width: 100%;
+    position: sticky;
+    top: 10%;
+}
+
+#high-school-league-frame{
+    background-color: olive;
+    height: 85vh;
+    width: 100%;
+    position: sticky;
+    top: 15%;
+}
+
+#about-us-frame{
+    background-color: gainsboro;
+    height: 80vh;
+    width: 100%;
+    position: sticky;
+    top:20%;
+}
+
+footer{
+    background-color: rgb(136, 69, 127);
+    z-index: 100;
+}
