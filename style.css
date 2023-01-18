@@ -1,71 +1,183 @@
-@font-face{
-    font-family: fatcow;
-    src: url(FatCow.otf);
+@font-face {
+    font-family: uni-sans;
+    src: url("uni-sans/Uni\ Sans\ Heavy.otf");
 }
 
-body,html{
-    padding: 0;
-    margin: 0;
+html, body{
+    margin: 0px;
+    padding: 0px;
+    font-family: uni-sans;
 }
 
 body{
-    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.pointer{
+    cursor: pointer;
 }
 
 section{
-    background-color: bisque;
-}
-
-.primary-frames{
-    background-color: rgb(201, 185, 5);
-}
-
-#welcome-frame{
-    background-color: #888;
+    width: 100%;
     height: 100vh;
+    top: 0%;
+    left: 0%;
+    position: relative;
+    transition: all 1s;
+}
+
+#landing-page{
+    top: 0%;
+    left: 0%;
+}
+
+.start-hold{
+    position: absolute;
+    /*background-color: rgba(0,0,0,0.1);*/
+}
+
+#first-time-start{
+    top: 40%;
+    left: 10%;
+}
+
+#events-and-announcements-start{
+    top: 20%;
+    left: 35%;
+}
+
+#high-school-start{
+    top: 50%;
+    left: 50%;
+}
+
+#about-us-start{
+    top: 30%;
+    left: 75%;
+}
+
+.start-svg:hover{
+    cursor: pointer;
+}
+
+
+#title-container{
+    position: relative;
+    /*background-color: rgba(0,0,0,0.1);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 80%;
+}
+
+#title{
+    font-family: uni-sans;
+    font-weight: 900;
+    font-size: 4rem;
+    color: rgb(119, 189, 255);
+}
+
+
+#first-time-page{
+    position: absolute;
+    top: -120%;
+    left: -120%;
+    transition: top 1s, left 1s;
+}
+
+#first-time-info{
+    position: relative;
     width: 100%;
-    position: sticky;
-    top: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
 }
 
-#welcome-frame a{
-    font-family: fatcow;
-    font-size: 100px;
+#first-time-info h3{
+    font-family: uni-sans;
+    font-weight: 900;
+    font-size: 3rem;
+    color: rgb(119, 189, 255);
 }
 
-#first-time-frame{
-    background-color: rebeccapurple;
-    height: 95vh;
-    width: 100%;
-    position: sticky;
-    top: 5%;
+#prices{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
 }
 
-#upcoming-events-frame{
-    background-color: hotpink;
-    height: 90vh;
-    width: 100%;
-    position: sticky;
-    top: 10%;
+#prices-grid{
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
-#high-school-league-frame{
-    background-color: olive;
-    height: 85vh;
-    width: 100%;
-    position: sticky;
-    top: 15%;
+#prices-label{
+    grid-column-start: 2;
 }
 
-#about-us-frame{
-    background-color: gainsboro;
-    height: 80vh;
-    width: 100%;
-    position: sticky;
-    top:20%;
+.prices-grid-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-footer{
-    background-color: rgb(136, 69, 127);
-    z-index: 100;
+.prices-grid-item a{
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.prices-grid-item a:nth-child(2){
+    font-size: 1rem;
+    color: rgba(200,200,200,1);
+}
+
+
+
+.return-hold{
+    position: absolute;
+}
+
+#first-time-return-hold{
+    top: 70%;
+    left: 75%;
+}
+
+#first-time-return-hold:hover ~ #first-time-return-arrow{
+    width: 60px;
+    height: 60px;
+    border-bottom: 20px solid rgba(0, 0, 0, 0.8);
+    border-left: 20px solid transparent;
+    border-right: 20px solid rgba(0, 0, 0, 0.8);
+    border-top: 20px solid transparent;
+}
+
+#first-time-return-arrow{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    top: 80%;
+    left: 80%;
+    width: 50px;
+    height: 50px;
+    border-bottom: 20px solid rgba(0, 0, 0, 0.5);
+    border-left: 20px solid transparent;
+    border-right: 20px solid rgba(0, 0, 0, 0.5);
+    border-top: 20px solid transparent;
+    transition: all 0.5s;
+}
+
+#first-time-return-arrow:hover{
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border-bottom: 20px solid rgba(0, 0, 0, 0.8);
+    border-left: 20px solid transparent;
+    border-right: 20px solid rgba(0, 0, 0, 0.8);
+    border-top: 20px solid transparent;
 }
