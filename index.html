@@ -4,47 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>The Climbing Center</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <title>Wall Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/ad2b3ba940.js" crossorigin="anonymous"></script>
   </head>
+
   <body>
-    <section>
-      <article class="primary-frames" id="welcome-frame">
-        <a href="#footer">Welcome To The Climbing Center</a>
-      </article>
-
-      <article class="primary-frames" id="first-time-frame">
-        First time climbers
-        <div>
-          <a>Waiver</a>
-          <div>
-            <a>Rates</a>
-          </div>
+    <section id="landing-page">
+        <div class="start-hold" id="first-time-start">
+          <svg id="edyGNMV62Ke1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 160 160" width="200" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+            <path class="start-svg" id="red-start" d="M0,40.586624c0-9.731493,5.135344-10.105782,9.672596-11.228646s13.611756.374287,21.03635,1.122864s37.535446,1.497151,49.291054,1.497151s35.266822-2.24573,43.928848-4.865747s36.071152-15.345814,36.071152,0-.598092,46.411732-12.559938,63.628988-34.648104,21.334424-44.135086,21.708712-63.521526-8.23434-63.521526-8.23434-22.913122-4.117168-31.348286-16.468678C0,75.395418,0,54.061003,0,40.586624Z" transform="translate(0 11.816445)" fill="#f00" stroke="rgba(63,87,135,0)" stroke-width="0.5"/>
+          </svg>
         </div>
-      </article>
-      
-      <article class="primary-frames" id="upcoming-events-frame">
-        Upcoming events
-      </article>
-      
-      <article class="primary-frames" id="high-school-league-frame">
-        High school league
-      </article>
+        <div class="start-hold" id="events-and-announcements-start">
+          <svg height="200" width="200">
+            <circle class="start-svg" id="black-start" cx="50%" cy="50%" r="80" stroke-width="0" fill="black" />
+          </svg> 
+        </div>
+        <div class="start-hold" id="high-school-start">
+          <svg height="200" width="200">
+            <circle class="start-svg" id="green-start" cx="50%" cy="50%" r="80" stroke-width="0" fill="green" />
+          </svg> 
+        </div>
+        <div class="start-hold" id="about-us-start">
+          <svg height="200" width="200">
+            <circle class="start-svg" id="purple-start" cx="50%" cy="50%" r="80" stroke-width="0" fill="purple" />
+          </svg> 
+        </div>
 
-      <article class="primary-frames" id="about-us-frame">
-        About us
-      </article>
+        <div id="title-container">
+            <a id="title">
+                Welcome to the Climbing Center
+            </a>
+        </div>
     </section>
 
-    <footer id="footer">
-      <div>Facebook</div>
-      <div>Instagram</div>
-      <div>YouTube</div>
+    <section id="first-time-page">
+      <div id="first-time-info">
+        <!--<div id="hours-container">
+          <h3 id="hours-title">Daily Hours:</h3>
+          <a id="hours-weekdays">Monday-Friday: 12p.m. - 9p.m.</a>
+          <a id="hours-weekend">Saturday-Sunday: 12p.m. - 7p.m.</a>
+        </div>
+        <div id="location">
+          <h3 href="https://goo.gl/maps/2Bj7UiXN2F42">Address:</h3>
+          <a> 2918 Sutherland Ave, Knoxville, Tennessee 37919</a>
+        </div>
+      -->
+        <div id="prices">
+          <h3>Day Passes and Rentals</h3>
+          <div id="prices-grid">
+            <div id="prices-label" class="prices-grid-item"><a>Adult Prices</a><a>Student Prices</a></div>
+            <div class="prices-grid-item"><a>Day Package</a></div>
+            <div class="prices-grid-item"><a>$22</a><a>$18</a></div>
+            <div class="prices-grid-item"><a>Bouldering Day Pass</a></div>
+            <div class="prices-grid-item"><a>$12</a><a>$10</a></div>
+            <div class="prices-grid-item"><a>Top Rope Day Pass</a></div>
+            <div class="prices-grid-item"><a>$15</a><a>$13</a></div>
+            <div class="prices-grid-item"><a>Shoe Rental</a></div>
+            <div class="prices-grid-item"><a>$4</a><a>$3</a></div>
+            <div class="prices-grid-item"><a>Harness Rental</a></div>
+            <div class="prices-grid-item"><a>$3</a></div>
+            <div class="prices-grid-item"><a>Belay Device Rental</a></div>
+            <div class="prices-grid-item"><a>$3</a></div>
+          </div>
+        </div>
+        
+        <div id="other-info-container">
+          <div id="waiver-container">
+            <a>All climbers must complete a waiver!</a>
+            <button>Waiver</button>
+          </div>
+          <div id="hours-and-location">
+            <h3>Hours and Location</h3>
+          </div>
+        </div>
+      </div>
+      <div class="return-hold" id="first-time-return-hold">
+        <svg height="100" width="100">
+          <circle class="start-svg" id="red-return" cx="50%" cy="50%" r="50" stroke-width="0" fill="red" />
+        </svg>
+      </div>
+      <div class="return-arrow" id="first-time-return-arrow"></div>
+    </section>
 
-      <a>This website was created by Nathan Pope</a>
-      <div>GitHub</div>
-    </footer>
 	<script src="index.js"></script>
   </body>
 </html>
